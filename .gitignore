@@ -1,0 +1,19 @@
+#Unity auto-genrented resources
+/[Ll]ibrary/
+/[Ll]ogs/
+/[Tt]emp/
+/[Bb]uilds/
+
+/[Uu]serSettings/
+!UserSettings/EditorUserBuildSettings.asset
+
+/[Pp]ackages/
+!manifest.json
+!packages-lock.json
+
+#IDE
+.git
+.vscode
+*.sln
+*.vs
+
