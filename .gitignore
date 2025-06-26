@@ -3,6 +3,7 @@
 /[Ll]ogs/
 /[Tt]emp/
 /[Bb]uilds/
+/[Oo]bj/
 
 /[Uu]serSettings/
 !UserSettings/EditorUserBuildSettings.asset
@@ -11,9 +12,10 @@
 !manifest.json
 !packages-lock.json
 
-#IDE
+#IDE 
 .git
 .vscode
+.idea
 *.sln
 *.vs
 
