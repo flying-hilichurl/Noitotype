@@ -1,21 +1,23 @@
-using System;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(MapGenerator))]
-public class MapGeneratorEditor:Editor
+namespace Editor
 {
-   public override void OnInspectorGUI()
+   [CustomEditor(typeof(MapGenerator))]
+   public class MapGeneratorEditor:UnityEditor.Editor
    {
-      base.DrawDefaultInspector();
-      if(GUILayout.Button("Generate Map"))
+      public override void OnInspectorGUI()
       {
-         ((MapGenerator)target).GenerateMap();
-      }
+         base.DrawDefaultInspector();
+         if(GUILayout.Button("Generate Map"))
+         {
+            ((MapGenerator)target).GenerateMap();
+         }
 
-      if (GUILayout.Button("Cleat Map"))
-      {
-         ((MapGenerator)target).ClearMap();
+         if (GUILayout.Button("Cleat Map"))
+         {
+            ((MapGenerator)target).ClearMap();
+         }
       }
    }
 }

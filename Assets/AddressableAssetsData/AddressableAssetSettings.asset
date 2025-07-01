@@ -85,8 +85,7 @@ MonoBehaviour:
       m_InlineUsage: 0
     m_ProfileVersion: 1
   m_LabelTable:
-    m_LabelNames:
-    - default
+    m_LabelNames: []
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 33dca60d83c4653499d42508f5951b1a, type: 2}
