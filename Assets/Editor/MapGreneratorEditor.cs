@@ -1,22 +1,32 @@
+using MapFactory;
 using UnityEditor;
 using UnityEngine;
 
 namespace Editor
 {
-   [CustomEditor(typeof(MapGenerator))]
+   [CustomEditor(typeof(IrregularMapFactory))]
    public class MapGeneratorEditor:UnityEditor.Editor
    {
       public override void OnInspectorGUI()
       {
+         IrregularMapFactory mapAbstractGenerator = (IrregularMapFactory)target;
          base.DrawDefaultInspector();
-         if(GUILayout.Button("Generate Map"))
+         if (GUILayout.Button("Generate Map"))
          {
-            ((MapGenerator)target).GenerateMap();
+            if(Application.isPlaying)
+               mapAbstractGenerator.CreateMap();
+            else
+            {
+               Debug.LogWarning("请在运行模式下使用");
+            }
          }
 
-         if (GUILayout.Button("Cleat Map"))
+         if (GUILayout.Button("Clear Map"))
          {
-            ((MapGenerator)target).ClearMap();
+            if(Application.isPlaying)
+               mapAbstractGenerator.ClearMap();
+            else
+               Debug.LogWarning("请在运行模式下使用");
          }
       }
    }

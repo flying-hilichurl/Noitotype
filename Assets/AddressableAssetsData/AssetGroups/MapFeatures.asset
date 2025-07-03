@@ -23,7 +23,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 671b41e228f125548b222da6c49b54dd
-    m_Address: Enterance
+    m_Address: Entrance
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff029165afbc57846ae4a36553465d35
+    m_Address: GroundRuleTile
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
