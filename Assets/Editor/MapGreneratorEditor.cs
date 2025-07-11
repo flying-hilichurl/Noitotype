@@ -27,7 +27,7 @@ namespace Editor
                mapAbstractGenerator.ClearMap();
             else
                Debug.LogWarning("请在运行模式下使用");
-         }
+        }
       }
    }
 }
